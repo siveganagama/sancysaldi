@@ -1,0 +1,66 @@
+.bannerlaterale {
+    width: 392px;
+    height: 450px;
+    position: fixed;
+    right: 0px;
+    bottom: 8px;
+    z-index: 9998;
+    background-image: url(https://www.flazio.com/componenti/flaziobn/images/free-editor.svg?n=1);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: contain;
+    animation: 1s ease-out discesa;
+    -moz-animation: 1s ease-out discesa;
+    -ms-animation: 1s ease-out discesa;
+    -o-animation: 1s ease-out discesa;
+    -webkit-animation: 1s ease-out discesa
+}
+.bannerlaterale_btn {
+    border: none;
+    outline: none !important;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+@media screen and (max-width: 1480px) {
+    .bannerlaterale {
+        width: 343px;
+        height: 400px;
+    }
+}
+@-webkit-keyframes discesa {
+    0% {
+        right: -500px;
+        opacity: 0
+    }
+    100% {
+        right: 0px;
+        opacity: 1
+    }
+}
+@keyframes discesa {
+    0% {
+        right: -500px;
+        opacity: 0
+    }
+    100% {
+        right: 0px;
+        opacity: 1
+    }
+}
+.bannerlaterale .esc {
+    background: url(https://www.flazio.com/componenti/flaziobn/images/esc.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 8px;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    top: -13px;
+    left: -26px;
+    cursor: pointer;
+    background-color: #0071f1;
+    border-radius: 50%;
+}
